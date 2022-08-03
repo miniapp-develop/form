@@ -1,7 +1,7 @@
 <view>
     <form model="{{viewModel}}">
         <form-input model-name="name"/>
-        <form-input model-name="age"/>
+        <form-input model-name="age" format="{{getNumber}}"/>
         <form-input model-name="married"/>
         <form-submit/>
     </form>
