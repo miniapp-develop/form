@@ -1,5 +1,7 @@
 {
   "usingComponents": {
-    "form": "../../lib/form"
+    "form": "/lib/form",
+    "form-input": "/lib/input",
+    "form-submit": "/lib/submit"
   }
 }

@@ -1,0 +1,3 @@
+<view class="mini-view" bind:tap="onTap">
+    提交
+</view>

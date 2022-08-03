@@ -1,3 +1,8 @@
 <view>
-    <form></form>
+    <form model="{{viewModel}}">
+        <form-input model-name="name"/>
+        <form-input model-name="age"/>
+        <form-input model-name="married"/>
+        <form-submit/>
+    </form>
 </view>
