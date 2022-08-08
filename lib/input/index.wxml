@@ -1,7 +1,10 @@
 <view class="mini-input mini-class">
     <view class="form-name">{{item.name}}</view>
-    <input class=""
-           value="{{valueView}}"
-           type="{{type}}"
-           bind:input="onChanged"/>
+    <view class="input">
+        <input class="input__value"
+               value="{{valueView}}"
+               type="{{type}}"
+               bind:input="onChanged"/>
+        <view class="input__action" bind:tap="onTap">选择</view>
+    </view>
 </view>

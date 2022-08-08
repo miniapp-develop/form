@@ -1,6 +1,6 @@
 <view>
     <form model="{{viewModel}}">
-        <form-input model-name="name"/>
+        <form-input model-name="name" bindtapped="onTap"/>
         <form-input model-name="age" type="number"/>
         <form-plain model-name="type"/>
         <form-bool model-name="married"/>

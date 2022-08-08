@@ -144,5 +144,8 @@ Page({
             }
         }
     },
-
+    onTap(e) {
+        console.log(e);
+        e.detail.commit('新的value');
+    }
 })
