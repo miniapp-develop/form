@@ -3,15 +3,7 @@ Page({
         viewModel: {
             name: {
                 name: '姓名',
-                value: 'xpy',
-                format: {
-                    getValueView(value) {
-                        return value;
-                    },
-                    getViewValue(value) {
-                        return value;
-                    }
-                }
+                value: 'xpy'
             },
             age: {
                 name: '年龄',
@@ -37,7 +29,7 @@ Page({
                     }
                 }
             },
-            xieyi: {
+            contract: {
                 name: '协议签署',
                 value: true,
                 choices: [
@@ -51,7 +43,21 @@ Page({
                     }
                 ]
             },
-            baowendai: {
+            waterproof: {
+                name: '防水袋',
+                value: false,
+                choices: [
+                    {
+                        value: true,
+                        text: '有'
+                    },
+                    {
+                        value: false,
+                        text: '没有'
+                    }
+                ]
+            },
+            keepWarm : {
                 name: '保温袋',
                 value: false,
                 choices: [

@@ -11,11 +11,14 @@
 
         <form-plain model-name="type"/>
 
-        <form-bool model-name="xieyi" disabled/>
-        <form-bool model-name="xieyi"/>
+        <form-radio model-name="contract" disabled/>
+        <form-radio model-name="contract"/>
 
-        <form-bool model-name="baowendai" disabled/>
-        <form-bool model-name="baowendai"/>
+        <form-radio model-name="waterproof" disabled/>
+        <form-radio model-name="waterproof"/>
+
+        <form-radio model-name="keepWarm" disabled/>
+        <form-radio model-name="keepWarm"/>
 
         <form-radio model-name="workingYears" disabled/>
         <form-radio model-name="workingYears"/>
