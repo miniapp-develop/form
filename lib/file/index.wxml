@@ -1,6 +1,7 @@
 <view>
-    This is input
     <view>
-        <input class="mini-input" value="{{value}}" bind:input="onChanged"/>
+        <view wx:for="{{item.value}}" wx:key="value" wx:for-item="file">
+            {{file.src}}
+        </view>
     </view>
 </view>

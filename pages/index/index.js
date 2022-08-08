@@ -70,13 +70,27 @@ Page({
                 ],
                 format: {
                     getValueView(value) {
-                        return value;
+                        const v = this.choices.find(ele => ele.value === value);
+                        return v.text;
                     },
                     getViewValue(value) {
                         return Number(value);
                     }
                 }
             },
+            images: {
+                name: '图片列表',
+                value: [
+                    {
+                        value: 1,
+                        src: 'http://1.png'
+                    },
+                    {
+                        value: 2,
+                        src: 'http://2.png'
+                    }
+                ]
+            }
         },
         format: {
             getValue(value) {

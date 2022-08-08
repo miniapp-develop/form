@@ -1,4 +1,7 @@
 <view class="mini-input mini-class">
     <view>{{item.name}}</view>
-    <input class="" value="{{valueView}}" bind:input="onChanged"/>
+    <input class=""
+           value="{{valueView}}"
+           type="{{type}}"
+           bind:input="onChanged"/>
 </view>

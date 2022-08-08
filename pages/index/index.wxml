@@ -1,10 +1,11 @@
 <view>
     <form model="{{viewModel}}">
         <form-input model-name="name"/>
-        <form-input model-name="age"/>
+        <form-input model-name="age" type="number"/>
         <form-input model-name="type"/>
         <form-bool model-name="married"/>
         <form-choice model-name="workingYears"/>
+        <form-file model-name="images"/>
         <form-submit/>
     </form>
 </view>
