@@ -1,8 +1,11 @@
-<view>
-    <view>{{item.name}}</view>
-    <view>
-        <view wx:for="{{item.value}}" wx:key="value" wx:for-item="file">
-            <image class="img" src="{{file.src}}"/>
+<view class="mini-file mini-class">
+    <view class="form-name">{{item.name}}</view>
+    <view class="file">
+        <view wx:for="{{item.value}}"
+              wx:key="value"
+              wx:for-item="file"
+              class="file-item">
+            <image class="file-item__img" src="{{file.src}}"/>
         </view>
     </view>
 </view>

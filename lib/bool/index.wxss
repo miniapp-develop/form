@@ -1,2 +1,14 @@
+@import "../styles/index.wxss";
+
 .mini-bool {
+    padding: 0.5em 0;
+}
+
+.bool-radio {
+    display: block;
+    padding: 0.5em 0;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.bool-radio__value {
 }

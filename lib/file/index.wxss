@@ -1,4 +1,18 @@
-.img {
+@import "../styles/index.wxss";
+
+.mini-file {
+    padding: 0.5em 0;
+}
+
+.file {
+    display: flex;
+}
+
+.file-item {
+    margin-right: 0.5em;
+}
+
+.file-item__img {
     width: 150rpx;
     height: 150rpx;
 }

@@ -1,13 +1,14 @@
 <wxs src="../form.wxs" module="form"/>
-<view class="mini-bool mini-class">
-    <view>{{item.name}}:{{valueView}}</view>
+<view class="mini-radio mini-class">
+    <view class="form-name">{{item.name}}:{{valueView}}</view>
     <radio-group bind:change="onChanged">
         <radio wx:for="{{item.choices}}"
                wx:key="value"
                wx:for-item="choice"
+               class="radio"
                checked="{{item.value === choice.value}}"
                value="{{choice.value}}">
-            {{choice.text}}
+            <view class="radio__value">{{choice.text}}</view>
         </radio>
     </radio-group>
     <view></view>

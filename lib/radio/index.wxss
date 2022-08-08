@@ -1,0 +1,14 @@
+@import "../styles/index.wxss";
+
+.mini-radio {
+    padding: 0.5em 0;
+}
+
+.radio {
+    display: block;
+    padding: 0.5em 0;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.radio__value {
+}

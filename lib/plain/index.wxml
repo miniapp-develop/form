@@ -1,4 +1,4 @@
-<view class="mini-input mini-class">
-    <view>{{item.name}}</view>
-    <view class="">{{valueView}}</view>
+<view class="mini-plain mini-class">
+    <view class="form-name plain__name">{{item.name}}</view>
+    <view class="plain__view">{{valueView}}</view>
 </view>

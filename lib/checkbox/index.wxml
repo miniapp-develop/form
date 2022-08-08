@@ -1,13 +1,14 @@
 <wxs src="../form.wxs" module="form"/>
-<view class="mini-bool mini-class">
+<view class="mini-checkbox mini-class">
     <view>{{item.name}}:{{valueView}}</view>
     <checkbox-group bind:change="onChanged">
         <checkbox wx:for="{{item.choices}}"
                   wx:key="value"
                   wx:for-item="choice"
+                  class="checkbox"
                   checked="{{form.checked(item.value, choice)}}"
                   value="{{choice.value}}">
-            {{choice.text}}
+            <view class="checkbox__value">{{choice.text}}</view>
         </checkbox>
     </checkbox-group>
     <view></view>

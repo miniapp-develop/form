@@ -1,5 +1,14 @@
-.mini-input {
-    width: 100%;
-    min-height: 3em;
-    border: 1px solid #eeeeee;
+@import "../styles/index.wxss";
+
+.mini-plain {
+    display: flex;
+    padding: 0.5em 0;
+}
+
+.plain__name {
+
+}
+
+.plain__view {
+    flex: 1;
 }

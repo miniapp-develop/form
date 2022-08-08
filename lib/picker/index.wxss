@@ -1,0 +1,25 @@
+@import "../styles/index.wxss";
+
+.mini-picker {
+    display: flex;
+    padding: 0.5em 0;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.form-value {
+    flex: 1;
+}
+
+.picker {
+    display: flex;
+}
+
+.picker__value {
+    flex: 1;
+}
+
+.picker__action {
+    font-style: italic;
+    color: cadetblue;
+    padding: 0 0.5em;
+}

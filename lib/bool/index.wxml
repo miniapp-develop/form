@@ -4,9 +4,10 @@
         <radio wx:for="{{item.choices}}"
                wx:key="value"
                wx:for-item="choice"
+               class="bool-radio"
                checked="{{choice.value === item.value}}"
                value="{{choice.value}}">
-            {{choice.text}}
+            <view class="bool-radio__value">{{choice.text}}</view>
         </radio>
     </radio-group>
     <view></view>

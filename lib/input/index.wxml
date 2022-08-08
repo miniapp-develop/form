@@ -1,5 +1,5 @@
 <view class="mini-input mini-class">
-    <view>{{item.name}}</view>
+    <view class="form-name">{{item.name}}</view>
     <input class=""
            value="{{valueView}}"
            type="{{type}}"

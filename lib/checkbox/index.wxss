@@ -1,0 +1,14 @@
+@import "../styles/index.wxss";
+
+.mini-checkbox{
+    padding: 0.5em 0;
+}
+
+.checkbox {
+    display: block;
+    padding: 0.5em 0;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.checkbox__value {
+}
