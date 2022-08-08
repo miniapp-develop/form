@@ -6,6 +6,10 @@
     border-bottom: 1px solid #e4e4e4;
 }
 
+.mini-input.disabled {
+    border: none;
+}
+
 .input-view {
     flex: 1;
     display: flex;

@@ -37,17 +37,31 @@ Page({
                     }
                 }
             },
-            married: {
-                name: '婚姻状况',
+            xieyi: {
+                name: '协议签署',
                 value: true,
                 choices: [
                     {
                         value: true,
-                        text: '已婚'
+                        text: '已签'
                     },
                     {
                         value: false,
-                        text: '未婚'
+                        text: '未签'
+                    }
+                ]
+            },
+            baowendai: {
+                name: '保温袋',
+                value: false,
+                choices: [
+                    {
+                        value: true,
+                        text: '有'
+                    },
+                    {
+                        value: false,
+                        text: '没有'
                     }
                 ]
             },
@@ -129,8 +143,8 @@ Page({
                     }
                 ]
             },
-            images: {
-                name: '图片列表',
+            menus: {
+                name: '菜单图片',
                 value: [
                     {
                         value: 1,
@@ -141,6 +155,10 @@ Page({
                         src: '/pages/index/logo.png'
                     }
                 ]
+            },
+            rule: {
+                name: '录入规则',
+                value: '按照菜单的5折录入'
             }
         }
     },

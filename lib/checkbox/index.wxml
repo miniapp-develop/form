@@ -9,7 +9,7 @@
         <!--            选择-->
         <!--        </view>-->
     </view>
-    <checkbox-group class="checkbox-edit" bind:change="onChanged">
+    <checkbox-group wx:if="{{!disabled}}" class="checkbox-edit" bind:change="onChanged">
         <checkbox wx:for="{{item.choices}}"
                   wx:key="value"
                   wx:for-item="choice"

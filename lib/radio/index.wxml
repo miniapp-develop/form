@@ -9,7 +9,7 @@
         <!--            选择-->
         <!--        </view>-->
     </view>
-    <radio-group class="radio-edit" bind:change="onChanged">
+    <radio-group wx:if="{{!disabled}}" class="radio-edit" bind:change="onChanged">
         <radio wx:for="{{item.choices}}"
                wx:key="value"
                wx:for-item="choice"

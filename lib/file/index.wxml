@@ -6,14 +6,16 @@
               wx:for-item="file"
               class="file-item">
             <image class="file-item__img" src="{{file.src}}"/>
-            <view class="file-item__action" data-index="{{index}}" bind:tap="onTapDelete">X</view>
+            <view wx:if="{{!disabled}}" class="file-item__action" data-index="{{index}}" bind:tap="onTapDelete">X</view>
         </view>
-        <view wx:if="{{flying}}" class="file-item">
-            <image class="file-item__img" src="{{flying.src}}"/>
-            <view class="file-item__mask">上传中...</view>
-        </view>
-        <view wx:else class="file-item" bind:tap="onTapChoose">
-            <view class="file-item__mask">选择文件</view>
-        </view>
+        <block wx:if="{{!disabled}}">
+            <view wx:if="{{flying}}" class="file-item">
+                <image class="file-item__img" src="{{flying.src}}"/>
+                <view class="file-item__mask">上传中...</view>
+            </view>
+            <view wx:else class="file-item" bind:tap="onTapChoose">
+                <view class="file-item__mask">选择文件</view>
+            </view>
+        </block>
     </view>
 </view>

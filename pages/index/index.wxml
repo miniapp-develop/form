@@ -1,13 +1,34 @@
 <view>
     <form model="{{viewModel}}" bindchange="onFormChanged" bindsubmit="onFormSubmit">
+        <form-input model-name="name" disabled bindtapped="onTap"/>
         <form-input model-name="name" bindtapped="onTap"/>
+
+        <form-input model-name="age" disabled type="number"/>
         <form-input model-name="age" type="number"/>
+
+        <form-input model-name="rule" disabled/>
+        <form-input model-name="rule"/>
+
         <form-plain model-name="type"/>
-        <form-bool model-name="married"/>
+
+        <form-bool model-name="xieyi" disabled/>
+        <form-bool model-name="xieyi"/>
+
+        <form-bool model-name="baowendai" disabled/>
+        <form-bool model-name="baowendai"/>
+
+        <form-radio model-name="workingYears" disabled/>
         <form-radio model-name="workingYears"/>
+
+        <form-checkbox model-name="skills" disabled/>
         <form-checkbox model-name="skills"/>
+
+        <form-picker model-name="country" disabled/>
         <form-picker model-name="country"/>
-        <form-file model-name="images" bindchoose="onTapChoose"/>
+
+        <form-file model-name="menus" bindchoose="onTapChoose" disabled/>
+        <form-file model-name="menus" bindchoose="onTapChoose"/>
+
         <form-submit/>
     </form>
 </view>
