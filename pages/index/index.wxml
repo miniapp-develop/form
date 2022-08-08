@@ -1,37 +1,20 @@
 <view>
+    <view class="page-actions">
+        <view class="page-action" bind:tap="onTapEnable">启用编辑</view>
+        <view class="page-action" bind:tap="onTapDisable">禁用编辑</view>
+    </view>
     <form model="{{viewModel}}" bindchange="onFormChanged" bindsubmit="onFormSubmit">
-        <form-input model-name="name" disabled bindemit="onTap"/>
-        <form-input model-name="name" bindemit="onTap"/>
-
-        <form-input model-name="age" disabled type="number"/>
-        <form-input model-name="age" type="number"/>
-
-        <form-input model-name="rule" disabled/>
-        <form-input model-name="rule"/>
-
+        <form-input model-name="name" disabled="{{!formEnable}}" bindemit="onTap"/>
+        <form-input model-name="age" disabled="{{!formEnable}}" type="number"/>
+        <form-input model-name="rule" disabled="{{!formEnable}}"/>
         <form-plain model-name="type"/>
-
-        <form-radio model-name="contract" disabled/>
-        <form-radio model-name="contract"/>
-
-        <form-radio model-name="waterproof" disabled/>
-        <form-radio model-name="waterproof"/>
-
-        <form-radio model-name="keepWarm" disabled/>
-        <form-radio model-name="keepWarm"/>
-
-        <form-radio model-name="workingYears" disabled/>
-        <form-radio model-name="workingYears"/>
-
-        <form-checkbox model-name="skills" disabled/>
-        <form-checkbox model-name="skills"/>
-
-        <form-picker model-name="country" disabled/>
-        <form-picker model-name="country"/>
-
-        <form-file model-name="menus" bindchoose="onTapChoose" disabled/>
-        <form-file model-name="menus" bindchoose="onTapChoose"/>
-
+        <form-radio model-name="contract" disabled="{{!formEnable}}"/>
+        <form-radio model-name="waterproof" disabled="{{!formEnable}}"/>
+        <form-radio model-name="keepWarm" disabled="{{!formEnable}}"/>
+        <form-radio model-name="workingYears" disabled="{{!formEnable}}"/>
+        <form-checkbox model-name="skills" disabled="{{!formEnable}}"/>
+        <form-picker model-name="country" disabled="{{!formEnable}}"/>
+        <form-file model-name="menus" bindchoose="onTapChoose" disabled="{{!formEnable}}"/>
         <form-submit/>
     </form>
 </view>

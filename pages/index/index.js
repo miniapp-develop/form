@@ -1,5 +1,6 @@
 Page({
     data: {
+        formEnable: true,
         viewModel: {
             name: {
                 name: '姓名',
@@ -130,6 +131,16 @@ Page({
                 value: '按照菜单的5折录入'
             }
         }
+    },
+    onTapEnable(e) {
+        this.setData({
+            formEnable: true
+        });
+    },
+    onTapDisable(e) {
+        this.setData({
+            formEnable: false
+        });
     },
     onTap(e) {
         console.log(e);

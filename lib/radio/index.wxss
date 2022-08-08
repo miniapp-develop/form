@@ -25,6 +25,6 @@
 
 .radio__text {
     flex: 1;
-    padding: 0.5em 0;
+    padding: 0.8em 0;
     border-bottom: 1px solid #e4e4e4;
 }
