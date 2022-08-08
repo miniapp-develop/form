@@ -1,5 +1,4 @@
-.mini-input {
-    width: 100%;
-    min-height: 2em;
-    border: 1px solid red;
+.img {
+    width: 150rpx;
+    height: 150rpx;
 }

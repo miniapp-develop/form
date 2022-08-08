@@ -4,7 +4,8 @@
         <form-input model-name="age" type="number"/>
         <form-input model-name="type"/>
         <form-bool model-name="married"/>
-        <form-choice model-name="workingYears"/>
+        <form-radio model-name="workingYears"/>
+        <form-checkbox model-name="skills"/>
         <form-file model-name="images"/>
         <form-submit/>
     </form>

@@ -9,5 +9,11 @@
             {{choice.text}}
         </radio>
     </radio-group>
+    <view>
+        <picker range="{{item.choices}}"
+                range-key="text">
+            修改
+        </picker>
+    </view>
     <view></view>
 </view>

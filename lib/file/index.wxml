@@ -1,7 +1,8 @@
 <view>
+    <view>{{item.name}}</view>
     <view>
         <view wx:for="{{item.value}}" wx:key="value" wx:for-item="file">
-            {{file.src}}
+            <image class="img" src="{{file.src}}"/>
         </view>
     </view>
 </view>

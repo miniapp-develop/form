@@ -78,23 +78,51 @@ Page({
                     }
                 }
             },
+            skills: {
+                name: '工作技能',
+                value: [0, 1, 2],
+                choices: [
+                    {
+                        value: 0,
+                        text: '洗脚'
+                    },
+                    {
+                        value: 1,
+                        text: '搓背'
+                    },
+                    {
+                        value: 2,
+                        text: '桑拿'
+                    }
+                ],
+                format: {
+                    getValueView(value) {
+                        const views = [];
+                        for (const v of value) {
+                            const found = this.choices.find(ele => ele.value === v);
+                            views.push(found.text);
+                        }
+                        return views.join('、');
+                    },
+                    getViewValue(value) {
+                        return value.map(ele => {
+                            return Number(ele);
+                        })
+                    }
+                }
+            },
             images: {
                 name: '图片列表',
                 value: [
                     {
                         value: 1,
-                        src: 'http://1.png'
+                        src: '/pages/index/logo.png'
                     },
                     {
                         value: 2,
-                        src: 'http://2.png'
+                        src: '/pages/index/logo.png'
                     }
                 ]
-            }
-        },
-        format: {
-            getValue(value) {
-                return value;
             }
         }
     },

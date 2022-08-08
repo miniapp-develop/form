@@ -4,7 +4,8 @@
     "form-input": "/lib/input",
     "form-bool": "/lib/bool",
     "form-file": "/lib/file",
-    "form-choice": "/lib/choice",
+    "form-radio": "/lib/radio",
+    "form-checkbox": "/lib/checkbox",
     "form-submit": "/lib/submit"
   }
 }
