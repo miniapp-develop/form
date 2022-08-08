@@ -1,7 +1,15 @@
 <wxs src="../form.wxs" module="form"/>
 <view class="mini-radio mini-class">
-    <view class="form-name">{{item.name}}:{{valueView}}</view>
-    <radio-group bind:change="onChanged">
+    <view class="radio-view">
+        <view class="form-name">{{item.name}}</view>
+        <view class="radio-view__value">
+            {{valueView}}
+        </view>
+        <!--        <view class="checkbox-view__action">-->
+        <!--            选择-->
+        <!--        </view>-->
+    </view>
+    <radio-group class="radio-edit" bind:change="onChanged">
         <radio wx:for="{{item.choices}}"
                wx:key="value"
                wx:for-item="choice"

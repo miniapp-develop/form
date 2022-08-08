@@ -4,6 +4,17 @@
     padding: 0.5em 0;
 }
 
+.bool-view {
+    display: flex;
+}
+
+.bool-view__value {
+    flex: 1;
+}
+
+.bool-edit {
+}
+
 .bool-radio {
     display: block;
     padding: 0.5em 0;

@@ -1,8 +1,20 @@
 @import "../styles/index.wxss";
 
-.mini-checkbox{
+.mini-checkbox {
     padding: 0.5em 0;
 }
+
+.checkbox-view {
+    display: flex;
+}
+
+.checkbox-view__value {
+    flex: 1;
+}
+
+.checkbox-edit {
+}
+
 
 .checkbox {
     display: block;

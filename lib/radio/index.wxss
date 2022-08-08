@@ -4,6 +4,18 @@
     padding: 0.5em 0;
 }
 
+.radio-view {
+    display: flex;
+}
+
+.radio-view__value {
+    flex: 1;
+}
+
+.radio-edit {
+}
+
+
 .radio {
     display: block;
     padding: 0.5em 0;

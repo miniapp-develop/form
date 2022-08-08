@@ -1,7 +1,15 @@
 <wxs src="../form.wxs" module="form"/>
 <view class="mini-checkbox mini-class">
-    <view>{{item.name}}:{{valueView}}</view>
-    <checkbox-group bind:change="onChanged">
+    <view class="checkbox-view">
+        <view class="form-name">{{item.name}}</view>
+        <view class="checkbox-view__value">
+            {{valueView}}
+        </view>
+        <!--        <view class="checkbox-view__action">-->
+        <!--            选择-->
+        <!--        </view>-->
+    </view>
+    <checkbox-group class="checkbox-edit" bind:change="onChanged">
         <checkbox wx:for="{{item.choices}}"
                   wx:key="value"
                   wx:for-item="choice"
