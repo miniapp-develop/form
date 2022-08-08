@@ -10,14 +10,15 @@
         <!--        </view>-->
     </view>
     <checkbox-group wx:if="{{!disabled}}" class="checkbox-edit" bind:change="onChanged">
-        <checkbox wx:for="{{item.choices}}"
-                  wx:key="value"
-                  wx:for-item="choice"
-                  class="checkbox"
-                  checked="{{form.checked(item.value, choice)}}"
-                  value="{{choice.value}}">
-            <view class="checkbox__value">{{choice.text}}</view>
-        </checkbox>
+        <label class="checkbox"
+               wx:for="{{item.choices}}"
+               wx:key="value"
+               wx:for-item="choice">
+            <checkbox class="checkbox__value"
+                      checked="{{form.checked(item.value, choice)}}"
+                      value="{{choice.value}}"/>
+            <view class="checkbox__text">{{choice.text}}</view>
+        </label>
     </checkbox-group>
     <view></view>
 </view>

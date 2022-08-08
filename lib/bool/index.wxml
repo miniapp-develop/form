@@ -9,14 +9,15 @@
         <!--        </view>-->
     </view>
     <radio-group wx:if="{{!disabled}}" class="bool-edit" bind:change="onChanged">
-        <radio wx:for="{{item.choices}}"
+        <label class="bool-radio"
+               wx:for="{{item.choices}}"
                wx:key="value"
-               wx:for-item="choice"
-               class="bool-radio"
-               checked="{{choice.value === item.value}}"
-               value="{{choice.value}}">
-            <view class="bool-radio__value">{{choice.text}}</view>
-        </radio>
+               wx:for-item="choice">
+            <radio class="bool-radio__value"
+                   checked="{{item.value === choice.value}}"
+                   value="{{choice.value}}"/>
+            <view class="bool-radio__text">{{choice.text}}</view>
+        </label>
     </radio-group>
     <view></view>
 </view>
