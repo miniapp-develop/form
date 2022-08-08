@@ -7,26 +7,13 @@ Page({
             },
             age: {
                 name: '年龄',
-                value: 22,
-                format: {
-                    getValueView(value) {
-                        return value;
-                    },
-                    getViewValue(value) {
-                        return Number(value);
-                    }
-                }
+                value: 22
             },
             type: {
                 name: '职位',
                 value: 1,
-                format: {
-                    getValueView(value) {
-                        return value === 0 ? '管理员' : '普通员工';
-                    },
-                    getViewValue(value) {
-                        return value;
-                    }
+                getValueView(value) {
+                    return value === 0 ? '管理员' : '普通员工';
                 }
             },
             contract: {
@@ -57,7 +44,7 @@ Page({
                     }
                 ]
             },
-            keepWarm : {
+            keepWarm: {
                 name: '保温袋',
                 value: false,
                 choices: [
@@ -87,16 +74,7 @@ Page({
                         value: 2,
                         text: '10-15年'
                     }
-                ],
-                format: {
-                    getValueView(value) {
-                        const v = this.choices.find(ele => ele.value === value);
-                        return v.text;
-                    },
-                    getViewValue(value) {
-                        return Number(value);
-                    }
-                }
+                ]
             },
             skills: {
                 name: '工作技能',
@@ -115,21 +93,6 @@ Page({
                         text: '桑拿'
                     }
                 ],
-                format: {
-                    getValueView(value) {
-                        const views = [];
-                        for (const v of value) {
-                            const found = this.choices.find(ele => ele.value === v);
-                            views.push(found.text);
-                        }
-                        return views.join('、');
-                    },
-                    getViewValue(value) {
-                        return value.map(ele => {
-                            return Number(ele);
-                        })
-                    }
-                }
             },
             country: {
                 name: '国籍',

@@ -1,7 +1,7 @@
 <view>
     <form model="{{viewModel}}" bindchange="onFormChanged" bindsubmit="onFormSubmit">
-        <form-input model-name="name" disabled bindtapped="onTap"/>
-        <form-input model-name="name" bindtapped="onTap"/>
+        <form-input model-name="name" disabled bindemit="onTap"/>
+        <form-input model-name="name" bindemit="onTap"/>
 
         <form-input model-name="age" disabled type="number"/>
         <form-input model-name="age" type="number"/>
