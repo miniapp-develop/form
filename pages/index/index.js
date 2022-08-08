@@ -146,6 +146,12 @@ Page({
     },
     onTap(e) {
         console.log(e);
-        e.detail.commit('新的value');
+        wx.showLoading({
+            title: '正在处理...'
+        });
+        setTimeout(() => {
+            e.detail.commit('新的value');
+            wx.hideLoading();
+        }, 1000);
     }
 })
