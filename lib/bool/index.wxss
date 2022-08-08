@@ -1,0 +1,3 @@
+.mini-bool {
+    border: 1px solid red;
+}

@@ -2,6 +2,9 @@
   "usingComponents": {
     "form": "/lib/form",
     "form-input": "/lib/input",
+    "form-bool": "/lib/bool",
+    "form-file": "/lib/file",
+    "form-choice": "/lib/choice",
     "form-submit": "/lib/submit"
   }
 }

@@ -1,4 +1,3 @@
 <view>
-    This is form:{{model}}
     <slot></slot>
 </view>

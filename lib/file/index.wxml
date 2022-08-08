@@ -1,0 +1,6 @@
+<view>
+    This is input
+    <view>
+        <input class="mini-input" value="{{value}}" bind:input="onChanged"/>
+    </view>
+</view>

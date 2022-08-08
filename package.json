@@ -14,7 +14,7 @@
     "url": "git+https://github.com/miniapp-develop/form.git"
   },
   "dependencies": {
-    "@mini-dev/connect": "0.0.5"
+    "@mini-dev/view-support": "0.0.5"
   },
   "keywords": [],
   "author": "",
