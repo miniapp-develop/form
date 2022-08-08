@@ -153,5 +153,21 @@ Page({
             e.detail.commit('新的value');
             wx.hideLoading();
         }, 1000);
+    },
+    onTapChoose(e) {
+        wx.chooseImage({
+            success(res) {
+                console.log(res);
+                const file = res.tempFilePaths[0];
+                e.detail.choose(file);
+                wx.showLoading({
+                    title: '正在上传...'
+                });
+                setTimeout(() => {
+                    e.detail.done({success: true, file: file});
+                    wx.hideLoading();
+                }, 1000);
+            }
+        });
     }
 })

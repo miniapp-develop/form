@@ -6,13 +6,43 @@
 
 .file {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .file-item {
+    position: relative;
+    width: 200rpx;
+    height: 200rpx;
+    margin-top: 0.5em;
     margin-right: 0.5em;
 }
 
+.file-item__action {
+    position: absolute;
+    top: -10rpx;
+    right: -10rpx;
+    width: 50rpx;
+    height: 50rpx;
+    line-height: 50rpx;
+    background: #00000088;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.file-item__mask {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding-top: 20%;
+    background: #33333366;
+    text-align: center;
+    color: white;
+}
+
 .file-item__img {
-    width: 150rpx;
-    height: 150rpx;
+    width: 100%;
+    height: 100%;
 }

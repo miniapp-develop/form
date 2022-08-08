@@ -7,7 +7,7 @@
         <form-radio model-name="workingYears"/>
         <form-checkbox model-name="skills"/>
         <form-picker model-name="country"/>
-        <form-file model-name="images"/>
+        <form-file model-name="images" bindchoose="onTapChoose"/>
         <form-submit/>
     </form>
 </view>
