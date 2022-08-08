@@ -1,0 +1,13 @@
+<wxs src="../form.wxs" module="form"/>
+<view class="mini-bool mini-class">
+    <view>{{item.name}}:{{valueView}}</view>
+    <view>
+        <picker range="{{item.choices}}"
+                range-key="text"
+                value="{{form.getValueIndex(item.choices, item.value)}}"
+                bind:change="onPickerChanged">
+            修改
+        </picker>
+    </view>
+    <view></view>
+</view>

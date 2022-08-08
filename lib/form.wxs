@@ -1,0 +1,23 @@
+var checked = function (values, choice) {
+    for (var i = 0; i < values.length; i++) {
+        if (values[i] === choice.value) {
+            return true;
+        }
+    }
+    return false;
+}
+
+var getValueIndex = function (values, choice) {
+    if (!values) {
+        return -1;
+    }
+    for (var i = 0; i < values.length; i++) {
+        if (values[i].value === choice) {
+            return i;
+        }
+    }
+    return -1;
+}
+
+module.exports.checked = checked;
+module.exports.getValueIndex = getValueIndex;

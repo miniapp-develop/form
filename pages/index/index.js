@@ -111,6 +111,24 @@ Page({
                     }
                 }
             },
+            country: {
+                name: '国籍',
+                value: '2',
+                choices: [
+                    {
+                        value: '0',
+                        text: '中国'
+                    },
+                    {
+                        value: '1',
+                        text: '美国'
+                    },
+                    {
+                        value: '2',
+                        text: '其他'
+                    }
+                ]
+            },
             images: {
                 name: '图片列表',
                 value: [

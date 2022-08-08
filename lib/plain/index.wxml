@@ -1,0 +1,4 @@
+<view class="mini-input mini-class">
+    <view>{{item.name}}</view>
+    <view class="">{{valueView}}</view>
+</view>

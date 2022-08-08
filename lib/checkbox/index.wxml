@@ -1,4 +1,4 @@
-<wxs src="./form.wxs" module="form"/>
+<wxs src="../form.wxs" module="form"/>
 <view class="mini-bool mini-class">
     <view>{{item.name}}:{{valueView}}</view>
     <checkbox-group bind:change="onChanged">

@@ -1,11 +1,13 @@
 {
   "usingComponents": {
     "form": "/lib/form",
+    "form-plain": "/lib/plain",
     "form-input": "/lib/input",
     "form-bool": "/lib/bool",
     "form-file": "/lib/file",
     "form-radio": "/lib/radio",
     "form-checkbox": "/lib/checkbox",
+    "form-picker": "/lib/picker",
     "form-submit": "/lib/submit"
   }
 }

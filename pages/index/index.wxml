@@ -2,10 +2,11 @@
     <form model="{{viewModel}}">
         <form-input model-name="name"/>
         <form-input model-name="age" type="number"/>
-        <form-input model-name="type"/>
+        <form-plain model-name="type"/>
         <form-bool model-name="married"/>
         <form-radio model-name="workingYears"/>
         <form-checkbox model-name="skills"/>
+        <form-picker model-name="country"/>
         <form-file model-name="images"/>
         <form-submit/>
     </form>

@@ -1,3 +1,4 @@
+<wxs src="../form.wxs" module="form"/>
 <view class="mini-bool mini-class">
     <view>{{item.name}}:{{valueView}}</view>
     <radio-group bind:change="onChanged">
