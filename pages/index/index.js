@@ -21,7 +21,7 @@ Page({
                         return value;
                     },
                     getViewValue(value) {
-                        return value;
+                        return Number(value);
                     }
                 }
             },
@@ -40,32 +40,46 @@ Page({
             married: {
                 name: '婚姻状况',
                 value: true,
-                format: {
-                    getValueView(value) {
-                        return value ? '已婚' : '单身';
+                choices: [
+                    {
+                        value: true,
+                        text: '已婚'
                     },
-                    getViewValue(value) {
-                        return value;
+                    {
+                        value: false,
+                        text: '未婚'
                     }
-                }
+                ]
             },
             workingYears: {
                 name: '工作年限',
-                value: 100,
-                choices: [],
+                value: 1,
+                choices: [
+                    {
+                        value: 0,
+                        text: '0-5年'
+                    },
+                    {
+                        value: 1,
+                        text: '5-10年'
+                    },
+                    {
+                        value: 2,
+                        text: '10-15年'
+                    }
+                ],
                 format: {
                     getValueView(value) {
-                        return value ? '已婚' : '单身';
+                        return value;
                     },
                     getViewValue(value) {
-                        return value;
+                        return Number(value);
                     }
                 }
             },
         },
         format: {
             getValue(value) {
-                debugger
                 return value;
             }
         }

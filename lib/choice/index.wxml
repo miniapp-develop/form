@@ -1,4 +1,12 @@
 <view class="mini-bool mini-class">
-    <view>{{item.name}}</view>
+    <view>{{item.name}}:{{valueView}}</view>
+    <radio-group bind:change="onChanged">
+        <radio wx:for="{{item.choices}}"
+               wx:key="value"
+               wx:for-item="choice"
+               checked="{{choice.value === item.value}}"
+               value="{{choice.value}}">{{choice.text}}
+        </radio>
+    </radio-group>
     <view></view>
 </view>
