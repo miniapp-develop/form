@@ -6,16 +6,16 @@
     border-bottom: 1px solid #e4e4e4;
 }
 
-.input {
+.input-view {
     flex: 1;
     display: flex;
 }
 
-.input__value {
+.input-view__value {
     flex: 1;
 }
 
-.input__action {
+.input-view__action {
     font-style: italic;
     color: cadetblue;
     padding: 0 0.5em;
