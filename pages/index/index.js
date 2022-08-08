@@ -169,5 +169,11 @@ Page({
                 }, 1000);
             }
         });
+    },
+    onFormSubmit(e) {
+        console.log(e);
+    },
+    onFormChanged(e) {
+        console.log(e);
     }
 })

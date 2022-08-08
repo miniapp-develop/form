@@ -1,5 +1,5 @@
 <view>
-    <form model="{{viewModel}}">
+    <form model="{{viewModel}}" bindchange="onFormChanged" bindsubmit="onFormSubmit">
         <form-input model-name="name" bindtapped="onTap"/>
         <form-input model-name="age" type="number"/>
         <form-plain model-name="type"/>
