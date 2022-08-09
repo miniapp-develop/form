@@ -155,23 +155,29 @@ Page({
     onTapChoose(e) {
         wx.chooseImage({
             success(res) {
-                console.log(res);
                 const file = res.tempFilePaths[0];
-                e.detail.choose(file);
+                e.detail.sendMessage({
+                    type: 'flying',
+                    flying: file
+                });
                 wx.showLoading({
                     title: '正在上传...'
                 });
                 setTimeout(() => {
-                    e.detail.done({success: true, file: file});
+                    e.detail.sendMessage({
+                        type: 'done',
+                        success: true,
+                        file: file
+                    });
                     wx.hideLoading();
                 }, 1000);
             }
         });
     },
-    onFormSubmit(e) {
-        console.log(e);
-    },
     onFormChanged(e) {
-        console.log(e);
+        console.log('onFormChanged', e);
+    },
+    onFormSubmit(e) {
+        console.log('onFormSubmit', e);
     }
 })

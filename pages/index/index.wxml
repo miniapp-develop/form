@@ -14,7 +14,7 @@
         <form-radio model-name="workingYears" disabled="{{!formEnable}}"/>
         <form-checkbox model-name="skills" disabled="{{!formEnable}}"/>
         <form-picker model-name="country" disabled="{{!formEnable}}"/>
-        <form-file model-name="menus" bindchoose="onTapChoose" disabled="{{!formEnable}}"/>
+        <form-file model-name="menus" bindadd="onTapChoose" disabled="{{!formEnable}}"/>
         <form-submit mini-class="form-submit">
             保存
         </form-submit>

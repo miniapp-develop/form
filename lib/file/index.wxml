@@ -13,7 +13,7 @@
                 <image class="file-item__img" src="{{flying.src}}"/>
                 <view class="file-item__mask">上传中...</view>
             </view>
-            <view wx:else class="file-item" bind:tap="onTapChoose">
+            <view wx:else class="file-item" bind:tap="onTapAdd">
                 <view class="file-item__mask">选择文件</view>
             </view>
         </block>
