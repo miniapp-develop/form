@@ -9,3 +9,9 @@
     text-align: center;
     background: #e4e4e4;
 }
+
+.form-submit {
+    padding: 1em;
+    text-align: center;
+    background: gray;
+}
