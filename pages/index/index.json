@@ -1,6 +1,6 @@
 {
   "usingComponents": {
-    "form": "/lib/form",
+    "form-view": "/lib/form",
     "form-plain": "/lib/plain",
     "form-input": "/lib/input",
     "form-radio": "/lib/radio",

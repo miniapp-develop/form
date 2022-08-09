@@ -3,7 +3,7 @@
         <view class="page-action" bind:tap="onTapEnable">启用编辑</view>
         <view class="page-action" bind:tap="onTapDisable">禁用编辑</view>
     </view>
-    <form model="{{viewModel}}" bindchange="onFormChanged" bindsubmit="onFormSubmit">
+    <form-view model="{{viewModel}}" bindchange="onFormChanged" bindsubmit="onFormSubmit">
         <form-input model-name="name" disabled="{{!formEnable}}" bindemit="onTap"/>
         <form-input model-name="age" disabled="{{!formEnable}}" type="number"/>
         <form-input model-name="rule" disabled="{{!formEnable}}"/>
@@ -16,5 +16,5 @@
         <form-picker model-name="country" disabled="{{!formEnable}}"/>
         <form-file model-name="menus" bindchoose="onTapChoose" disabled="{{!formEnable}}"/>
         <form-submit/>
-    </form>
+    </form-view>
 </view>
