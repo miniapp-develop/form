@@ -12,9 +12,18 @@ Page({
             },
             type: {
                 name: '职位',
-                value: 1,
-                getValueView(value) {
+                value: 0,
+                getValueView(modelItem) {
+                    const value = modelItem.value;
                     return value === 0 ? '管理员' : '普通员工';
+                }
+            },
+            location: {
+                name: '坐标',
+                value: {longitude: 116, latitude: 33},
+                getValueView(modelItem) {
+                    const value = modelItem.value;
+                    return `经度：${value.longitude}；纬度：${value.latitude}`;
                 }
             },
             contract: {

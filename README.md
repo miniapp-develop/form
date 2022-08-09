@@ -44,8 +44,8 @@ viewModel = {
             type: {
                 name: '职位',
                 value: 1,
-                getValueView(value) {
-                    return value === 0 ? '管理员' : '普通员工';
+                getValueView(modelItem) {
+                    return modelItem.value === 0 ? '管理员' : '普通员工';
                 }
             }}
 ```

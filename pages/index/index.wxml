@@ -8,6 +8,7 @@
         <form-input model-name="age" disabled="{{!formEnable}}" type="number"/>
         <form-input model-name="rule" disabled="{{!formEnable}}"/>
         <form-plain model-name="type"/>
+        <form-plain model-name="location"/>
         <form-radio model-name="contract" disabled="{{!formEnable}}"/>
         <form-radio model-name="waterproof" disabled="{{!formEnable}}"/>
         <form-radio model-name="keepWarm" disabled="{{!formEnable}}"/>
