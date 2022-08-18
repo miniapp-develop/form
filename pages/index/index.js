@@ -4,11 +4,20 @@ Page({
         viewModel: {
             name: {
                 name: '姓名',
-                value: 'xpy'
+                value: 'xpy',
+                placeholder: '请输入姓名'
             },
             age: {
                 name: '年龄',
-                value: 22
+                value: 22,
+                valueType: Number,
+                placeholder: '请输入年龄'
+            },
+            spec: {
+                name: '特殊要求',
+                value: null,
+                placeholder: '空',
+                valueType: Number
             },
             type: {
                 name: '职位',
@@ -29,6 +38,7 @@ Page({
             contract: {
                 name: '协议签署',
                 value: true,
+                valueType: Boolean,
                 choices: [
                     {
                         value: true,
@@ -43,6 +53,7 @@ Page({
             waterproof: {
                 name: '防水袋',
                 value: false,
+                valueType: Boolean,
                 choices: [
                     {
                         value: true,
@@ -56,7 +67,8 @@ Page({
             },
             keepWarm: {
                 name: '保温袋',
-                value: false,
+                value: null,
+                valueType: Boolean,
                 choices: [
                     {
                         value: true,
@@ -71,6 +83,7 @@ Page({
             workingYears: {
                 name: '工作年限',
                 value: 1,
+                valueType: Number,
                 choices: [
                     {
                         value: 0,
@@ -88,7 +101,9 @@ Page({
             },
             skills: {
                 name: '工作技能',
-                value: [0, 1, 2],
+                value: [0, 2],
+                valueType: Number,
+                placeholder: '屁都不会',
                 choices: [
                     {
                         value: 0,
@@ -137,7 +152,8 @@ Page({
             },
             rule: {
                 name: '录入规则',
-                value: '按照菜单的5折录入，然后不足5元的，按照5元录入'
+                value: '按照菜单的5折录入，然后不足5元的，按照5元录入',
+                placeholder: '请输入录入规则'
             }
         }
     },
@@ -145,12 +161,14 @@ Page({
         this.setData({
             formEnable: true
         });
-    },
+    }
+    ,
     onTapDisable(e) {
         this.setData({
             formEnable: false
         });
-    },
+    }
+    ,
     onTap(e) {
         console.log(e);
         wx.showLoading({
@@ -160,7 +178,8 @@ Page({
             e.detail.callback('新的value');
             wx.hideLoading();
         }, 1000);
-    },
+    }
+    ,
     onTapChoose(e) {
         wx.chooseImage({
             success(res) {
@@ -182,10 +201,12 @@ Page({
                 }, 1000);
             }
         });
-    },
+    }
+    ,
     onFormChanged(e) {
         console.log('onFormChanged', e);
-    },
+    }
+    ,
     onFormSubmit(e) {
         console.log('onFormSubmit', e);
     }

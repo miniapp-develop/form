@@ -6,6 +6,7 @@
     <form-view model="{{viewModel}}" bindchange="onFormChanged" bindsubmit="onFormSubmit">
         <form-input model-name="name" disabled="{{!formEnable}}" bindemit="onTap"/>
         <form-input model-name="age" disabled="{{!formEnable}}" type="number"/>
+        <form-input model-name="spec"/>
         <form-textarea model-name="rule" disabled="{{!formEnable}}"/>
         <form-plain model-name="type"/>
         <form-plain model-name="location"/>
