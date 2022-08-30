@@ -1,4 +1,4 @@
 <view class="mini-plain mini-class">
     <view class="form-name plain__name">{{item.name}}</view>
-    <view class="plain__view">{{valueView}}</view>
+    <text class="plain__view">{{valueView}}</text>
 </view>

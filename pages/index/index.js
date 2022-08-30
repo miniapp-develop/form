@@ -32,7 +32,7 @@ Page({
                 value: {longitude: 116, latitude: 33},
                 getValueView(modelItem) {
                     const value = modelItem.value;
-                    return `经度：${value.longitude}；纬度：${value.latitude}`;
+                    return `经度：${value.longitude}\n纬度：${value.latitude}`;
                 }
             },
             contract: {
