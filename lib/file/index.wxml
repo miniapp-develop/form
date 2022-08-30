@@ -5,7 +5,7 @@
               wx:key="value"
               wx:for-item="file"
               class="file-item">
-            <image class="file-item__img" src="{{file.src}}"/>
+            <image class="file-item__img" src="{{file.src}}" data-index="{{index}}" bind:tap="onPreview"/>
             <view wx:if="{{!disabled}}" class="file-item__action" data-index="{{index}}" bind:tap="onTapDelete">X</view>
         </view>
         <block wx:if="{{!disabled}}">
