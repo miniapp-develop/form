@@ -35,11 +35,13 @@ model 的基本格式如下：
 viewModel = {
             name: {
                 name: '姓名',
-                value: 'xpy'
+                value: 'xpy',
+                placeholder: '请输入姓名'
             },
             age: {
                 name: '年龄',
-                value: 22
+                value: 22,
+                valueType: Number,
             },
             type: {
                 name: '职位',
@@ -57,10 +59,14 @@ getValueView 的作用是将 value 映射为可读性更好的描述文本，当
 
 如上面的例子：type 字段的 value 是 1，如果没有 getValueView 方法，页面就会显示 1，加上了 getValueView 方法之后，页面就显示为 *普通员工*。
 
+如果配置了 valueType，则在 value 发生变化的时候，会先进行 value 的类型转换，再进行后续的处理。
+当前支持的 valueType 包括：Number、Boolean。
+
 ## 组件列表
 
     plain
     input
+    textarea
     radio
     checkbox
     picker

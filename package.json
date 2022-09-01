@@ -1,6 +1,6 @@
 {
   "name": "@mini-dev/form",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "",
   "miniprogram": "lib",
   "main": "lib/index.js",
