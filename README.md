@@ -12,7 +12,7 @@
 
 从表单到数据：
 
-    FormView -(collect)-> FormMap -(stringify)-> FormView
+    FormView -(collect)-> FormMap -(stringify)-> JSON
 
 ### JSON 格式定义
 
