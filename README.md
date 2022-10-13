@@ -4,34 +4,112 @@
 
 ## 简介
 
+### 基本步骤
+
+#### 1、构建表单
+
+从表单模板数据到表单模板：
+
+    FormTemplateJSON -(parse)-> FormMap -(render)-> FormView
+
+#### 2、构建表单项
+
+从表单项数据到表单项：
+
+    FormItemJSON -(parse)-> FormMap -(render)-> FormItemView
+
+#### 3、收集表单数据项
+
+从表单项到表单项数据：
+
+    FormItemView -(collect)-> FormMap -(stringify)-> FormItemJSON
+
+#### 4、汇总表单项数据
+
+    FormItemJSON -(collect)-> FormItemJSONList
+
+### 格式定义
+
 使用 JSON 格式进行数据传输以及存储。
 
-从数据到表单：
+#### 表单模板数据
 
-    JSON -(parse)-> FormMap -(render)-> FormView
+基本要素：
+```json5
+[
+    {
+        type: 'input', //textarea, choice, file
+        multi: true, // true | false
+        valueType: 'number', // boolean, string, object
+        placeholder: 'xxx',
+        name: 'xxx',
+        value: [...],
+        choices:[...]
+    },
+    ...
+]
+```
 
-从表单到数据：
+示例：
 
-    FormView -(collect)-> FormMap -(stringify)-> JSON
+```json5
+[
+    {
+        type: 'input', 
+        valueType: 'number', // boolean, string, object
+        name: 'age',
+        value: [18],
+        placeholder: '请输入年龄'
+    },
+    {
+        type: 'textarea', 
+        valueType: 'string',
+        name: 'rule',
+        value: ['xxxxxxx'],
+        placeholder: '请输入规则'
+    },
+    {
+        type: 'choice', 
+        multi: true, // true | false
+        valueType: 'number', 
+        name: 'salary',
+        value: [1],
+        choices:[
+          {
+            value: 1,
+            text: '1个小目标'
+          },
+          {
+            value: 2,
+            text: '2-10个小目标'
+          }
+        ]
+    },
+    {
+        type: 'file', 
+        multi: true, // true | false
+        name: 'images',
+        value:[
+          {
+            value: 'http://xxxx/aaaa.png',
+            text: '说明一'
+          },
+          {
+            value: 'http://xxxx/bbbb.png',
+            text: '说明二'
+          }
+        ]
+    },
+    ...
+]
+```
 
-### JSON 格式定义
+#### 表单项数据
 
 ```json5
 {
     name: 'age',
-    valueType: 'number', // boolean, string, file, object
-    multi: true, // true | false
-    value: [18],
-    choices:[
-      {
-        value: 18,
-        text: '十八岁'
-      },
-      {
-        value: 19,
-        text: '十九岁'
-      }
-    ]
+    value: [18]
 }
 ```
 
@@ -39,8 +117,17 @@
 
 TODO
 
-
 ### FormView 使用
+
+type 与 组件的对应关系：
+
+|  type   | 组件  |
+|  ----  | ----  |
+| input  | input |
+| textarea  | textarea |
+| choice  | radio，checkbox，picker |
+| file  | file |
+
 
 #### 安装
 
