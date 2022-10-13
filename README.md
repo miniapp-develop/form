@@ -38,12 +38,12 @@
 ```json5
 [
     {
+        name: 'xxx',
         type: 'input', //textarea, choice, file
         multi: true, // true | false
-        valueType: 'number', // boolean, string, object
         placeholder: 'xxx',
-        name: 'xxx',
-        value: [...],
+        valueType: 'number', // boolean, string, object
+        defaultValue: [...],
         choices:[...]
     },
     ...
@@ -58,14 +58,14 @@
         type: 'input', 
         valueType: 'number', // boolean, string, object
         name: 'age',
-        value: [18],
+        defaultValue: [18],
         placeholder: '请输入年龄'
     },
     {
         type: 'textarea', 
         valueType: 'string',
         name: 'rule',
-        value: ['xxxxxxx'],
+        defaultValue: ['xxxxxxx'],
         placeholder: '请输入规则'
     },
     {
@@ -73,7 +73,7 @@
         multi: true, // true | false
         valueType: 'number', 
         name: 'salary',
-        value: [1],
+        defaultValue: [1],
         choices:[
           {
             value: 1,
@@ -89,7 +89,7 @@
         type: 'file', 
         multi: true, // true | false
         name: 'images',
-        value:[
+        defaultValue:[
           {
             value: 'http://xxxx/aaaa.png',
             text: '说明一'
@@ -109,7 +109,7 @@
 ```json5
 {
     name: 'age',
-    value: [18]
+    value: [...]
 }
 ```
 
