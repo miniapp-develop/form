@@ -22,7 +22,7 @@
 
 从表单项到表单项数据：
 
-    FormItemView -(collect)-> FormMap -(stringify)-> FormItemJSON
+    FormItemView -(reduce)-> FormMap -(stringify)-> FormItemJSON
 
 #### 4、汇总表单项数据
 
