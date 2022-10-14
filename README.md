@@ -39,6 +39,7 @@
 [
     {
         name: 'xxx',
+        required: true, // true | false
         type: 'input', //textarea, choice, file
         multi: true, // true | false
         placeholder: 'xxx',
