@@ -1,7 +1,7 @@
 {
   "name": "@mini-dev/form",
-  "version": "0.0.3",
-  "description": "",
+  "version": "0.0.4",
+  "description": "a miniapp form component",
   "miniprogram": "lib",
   "main": "lib/index.js",
   "directories": {
@@ -15,7 +15,7 @@
     "url": "git+https://github.com/miniapp-develop/form.git"
   },
   "dependencies": {
-    "@mini-dev/view-support": "0.0.5"
+    "@mini-dev/view-support": "0.1.0"
   },
   "keywords": [],
   "author": "",
