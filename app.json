@@ -1,6 +1,7 @@
 {
   "pages": [
-    "pages/index/index"
+    "pages/index/index",
+    "pages/json-form/index"
   ],
   "window": {
     "backgroundTextStyle": "light",

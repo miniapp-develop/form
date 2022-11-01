@@ -1,0 +1,14 @@
+{
+  "component": true,
+  "usingComponents": {
+    "form-view": "/lib/form",
+    "form-plain": "/lib/plain",
+    "form-input": "/lib/input",
+    "form-textarea": "/lib/textarea",
+    "form-radio": "/lib/radio",
+    "form-checkbox": "/lib/checkbox",
+    "form-picker": "/lib/picker",
+    "form-file": "/lib/file",
+    "form-submit": "/lib/submit"
+  }
+}

@@ -1,0 +1,3 @@
+<view>
+    <json-form template="{{template}}"></json-form>
+</view>

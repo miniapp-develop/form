@@ -36,7 +36,19 @@
     "compileHotReLoad": false,
     "ignoreUploadUnusedFiles": true
   },
-  "condition": {},
+  "condition": {
+    "miniprogram": {
+      "list": [
+        {
+          "name": "json-form",
+          "pathName": "pages/json-form/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        }
+      ]
+    }
+  },
   "editorSetting": {
     "tabIndent": "insertSpaces",
     "tabSize": 2

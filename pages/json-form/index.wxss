@@ -1,0 +1,17 @@
+.page-actions {
+    display: flex;
+    justify-content: space-around;
+}
+
+.page-action {
+    width: 40%;
+    padding: 0.8em;
+    text-align: center;
+    background: #e4e4e4;
+}
+
+.form-submit {
+    padding: 1em;
+    text-align: center;
+    background: gray;
+}
